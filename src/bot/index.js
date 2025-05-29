@@ -1,5 +1,5 @@
 import express from 'express';
-import { handleTgMsg } from './handlers.js';
+import { handleTgMsg } from './handler';
 
 const router = express.Router();
 

@@ -1,11 +1,14 @@
 import express from 'express';
 import botRouter from '../bot/index.js';
 import chatwootRouter from '../chatwoot/index.js';
-import { initDb } from '../db/sqlite.js';
-import config from '../config.js';
+// import { initDb } from '../db/sqlite.js';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const PORT=process.env.PORT || 3e4;
 
 async function start() {
-  await initDb();
+  // await initDb();
 
   const app = express();
   app.use(express.json());
@@ -18,8 +21,8 @@ async function start() {
     res.status(500).send('Internal Server Error');
   });
 
-  app.listen(config.port, () => {
-    console.log(`Server running on port ${config.port}`);
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
   });
 }
 

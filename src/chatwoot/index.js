@@ -1,5 +1,5 @@
 import express from 'express';
-import { handleChatwootMsg } from './chatwootHandler.js';
+import { handleChatwootMsg } from './handler';
 
 const router = express.Router();
 

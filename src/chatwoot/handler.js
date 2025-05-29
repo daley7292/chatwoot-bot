@@ -1,4 +1,4 @@
-import { sendMessage } from '../services/telegramService.js';
+import { sendMessage } from '../service/telegramService';
 
 export async function handleChatwootMsg(payload) {
   const message = payload.message;

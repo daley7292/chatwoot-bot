@@ -2,6 +2,10 @@
   "name": "chatwoot-bot",
   "type": "module",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^5.1.0"
+  },
+  "scripts": {
+    "start": "bun src/server/index.js"
   }
 }
