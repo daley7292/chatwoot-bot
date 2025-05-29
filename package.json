@@ -1,0 +1,7 @@
+{
+  "name": "chatwoot-bot",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
